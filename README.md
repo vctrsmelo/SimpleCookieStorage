@@ -5,4 +5,4 @@ Rails application to use browser cookies as a storage system.
 
 ## Demo
 
-<img src="[path/to/image.gif](https://github.com/vctrsmelo/SimpleCookieStorage/blob/main/demo.gif)" alt="demo" width="500">
+<img src="https://github.com/vctrsmelo/SimpleCookieStorage/blob/main/demo.gif" alt="demo" width="500">
