@@ -1,0 +1,35 @@
+<h1> Add a new Key-Value Pair </h1>
+
+<%= form_tag '/', method: :post do %>
+    <p>
+      <%= label_tag :key, 'Key' %><br>
+      <%= text_field_tag :key %>
+    </p>
+  
+    <p>
+      <%= label_tag :value, 'Value' %><br>
+      <%= text_field_tag :value %>
+    </p>
+  
+    <%= submit_tag 'Add' %>
+<% end %>
+
+<h1> Storage </h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @stored_cookies.each do |key, value| %>
+      <tr>
+        <td><%= key %></td>
+        <td><%= value %></td>
+        <td><%= button_to 'Delete', delete_path(key.gsub("+", " ")), method: :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
